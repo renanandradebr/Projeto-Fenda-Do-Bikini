@@ -6,11 +6,11 @@ def imprimirCaracteres():
 	print("====="*12)
  
 def contagem():
-  	      c = 0
-  	      while (c < 5):
-  	      	print(c)
-  	      	time.sleep(1)
-  	      	c += 1
+	c = 0
+	while (c < 5):
+		print(c)
+		time.sleep(1)
+		c += 1
 def imprimirMensagemDoCartão():
 	print('inserir cartão')
 	print('{:=^50}'.format("Aguarde um momento!"))
@@ -32,12 +32,7 @@ Dr_Hamburgueiro= {'Hamburguer de siri': 12.99,
                 }
 print('{:=^60}'.format('Bem-Vindo ao Dr. Hamburgueiro'))
 print('Cardápio:')
-'''
-for x in Dr_Burguer:
-    print (x)
-    for y in Dr_Burguer[x]:
-        print (y,':',Dr_Burguer[x][y])
-'''
+
 for produto, preco in Dr_Hamburgueiro.items():
 	print(f"{produto}: R${preco:0.02f}")
 
@@ -102,11 +97,12 @@ elif (opção == 3):
   print('O valor da parcela será de: R$', parcela)
   imprimirCaracteres()
   cartaoParcela = input("Deseja continuar? Sim ou Não:")
-  if(cartaoParcela == "Sim"):
-  		imprimirMensagemDoCartão()
-  		contagem()
-  		print("Compra efetuada")
-  		print("Obrigado pela Preferência, volte sempre!")
+  if(cartaoParcela == "Sim"){
+  	imprimirMensagemDoCartão()
+	contagem()
+	print("Compra efetuada")
+  	print("Obrigado pela Preferência, volte sempre!")
+	}
   elif(cartaoParcela == "Não"):
   		print("Compra cancelada")
   		print("---"*12)
